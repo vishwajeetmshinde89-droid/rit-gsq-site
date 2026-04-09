@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RIT Global Scholar Quest – India Chapter</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EFHFLNQYMK"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-EFHFLNQYMK');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --orange: #F76902;
+    --orange-mid: #f07810;
+    --orange-dark: #d95b00;
+    --black: #0f0f0f;
+    --dark: #1e1e1e;
+    --charcoal: #2d2d2d;
+    --grey-text: #555;
+    --grey-mid: #888;
+    --grey-border: rgba(0,0,0,0.07);
+    --light-bg: #f5f4f2;
+    --off-white: #faf9f7;
+    --white: #ffffff;
+    --display: 'Playfair Display', Georgia, serif;
+    --body: 'DM Sans', -apple-system, 'Segoe UI', sans-serif;
+    --radius: 10px;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+    --shadow-md: 0 6px 24px rgba(0,0,0,0.08);
+    --shadow-lg: 0 14px 48px rgba(0,0,0,0.10);
+    --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--body);
+    color: var(--black);
+    background: var(--white);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  img { max-width: 100%; height: auto; display: block; }
+  .container { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+  .container-sm { max-width: 940px; margin: 0 auto; padding: 0 28px; }
+
+  /* ═══ ANNOUNCEMENT BAR ═══ */
+  .announce-bar {
+    background: var(--black);
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 11px 20px;
+    font-size: 11.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .announce-bar strong { color: var(--orange); font-weight: 700; }
+
+  /* ═══ HEADER ═══ */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 300;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--grey-border);
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 0;
+    gap: 16px;
+  }
+  .logo-group { display: flex; align-items: center; gap: 14px; }
+  .rit-badge {
+    width: 48px; height: 48px;
+    background: var(--orange);
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--white);
+    font-family: var(--body);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    flex-shrink: 0;
+  }
+  .logo-text-group { line-height: 1.3; }
+  .logo-name { font-size: 14px; font-weight: 700; color: var(--black); }
+  .logo-sub { font-size: 10.5px; color: var(--grey-mid); font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; }
+
+  .header-btn {
+    background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%);
+    color: var(--white);
+    padding: 10px 22px;
+    border: none;
+    border-radius: 6px;
+    font-family: var(--body);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(247,105,2,0.2);
+  }
+  .header-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(247,105,2,0.3); }
+
+  /* ═══ HERO — SPLIT LAYOUT ═══ */
+  .hero {
+    padding: 60px 0 0;
+    background: var(--white);
+    position: relative;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 44px;
+    align-items: center;
+  }
+  .hero-content {
+    padding-bottom: 60px;
+    animation: fadeUp 0.6s var(--ease) both;
+  }
+
+  .hero-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgba(247,105,2,0.2);
+    background: rgba(247,105,2,0.04);
+    padding: 7px 18px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 24px;
+  }
+  .hero-pill::before {
+    content: '';
+    width: 7px; height: 7px;
+    background: var(--orange);
+    border-radius: 50%;
+    animation: blink 2s infinite;
+  }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+
+  .hero h1 {
+    font-family: var(--display);
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .hero h1 .c-orange { color: var(--orange); }
+
+  .hero-tagline {
+    font-family: var(--display);
+    font-size: clamp(16px, 2vw, 21px);
+    font-weight: 400;
+    color: var(--charcoal);
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .hero-desc {
+    font-size: 16px;
+    color: var(--grey-text);
+    line-height: 1.75;
+    margin-bottom: 24px;
+    max-width: 520px;
+  }
+
+  .hero-highlights {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+  }
+  .hl-card {
+    background: var(--dark);
+    color: var(--white);
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+    line-height: 1.3;
+  }
+  .hl-card small {
+    display: block;
+    font-size: 10px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.45);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 3px;
+  }
+
+  /* Premium CTA button */
+  .btn-cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: linear-gradient(135deg, var(--orange) 0%, var(--orange-mid) 50%, var(--orange-dark) 100%);
+    color: var(--white);
+    padding: 16px 34px; border: none; border-radius: 8px;
+    font-family: var(--body); font-size: 15px; font-weight: 700;
+    cursor: pointer; text-decoration: none;
+    transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
+    box-shadow: 0 4px 16px rgba(247,105,2,0.25);
+    letter-spacing: 0.01em;
+  }
+  .btn-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(247,105,2,0.35);
+  }
+  .btn-cta:active { transform: translateY(0); }
+
+  .btn-outline {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: transparent; color: var(--dark);
+    padding: 15px 30px; border: 1.5px solid rgba(0,0,0,0.12); border-radius: 8px;
+    font-family: var(--body); font-size: 15px; font-weight: 600;
+    cursor: pointer; text-decoration: none;
+    transition: all 0.2s var(--ease);
+  }
+  .btn-outline:hover { border-color: var(--orange); color: var(--orange); }
+
+  .hero-microcopy {
+    margin-top: 14px;
+    font-size: 12px;
+    color: var(--grey-mid);
+    line-height: 1.7;
+    max-width: 420px;
+  }
+  .hero-microcopy strong { color: var(--dark); font-weight: 600; }
+
+  .hero-edufund {
+    margin-top: 8px;
+    font-size: 11px;
+    color: #b0b0b0;
+    letter-spacing: 0.04em;
+  }
+
+  .hero-sponsor {
+    margin-top: 20px; padding-top: 16px;
+    border-top: 1px solid var(--grey-border);
+    font-size: 11px; color: var(--grey-mid);
+    letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600;
+  }
+  .hero-sponsor strong { color: var(--orange); }
+
+  /* Hero image with overlay */
+  .hero-visual {
+    position: relative;
+    animation: fadeUp 0.6s 0.12s var(--ease) both;
+    align-self: stretch;
+  }
+  .hero-visual img {
+    width: 100%;
+    height: 100%;
+    min-height: 480px;
+    object-fit: cover;
+    border-radius: 0;
+  }
+  .hero-visual::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15,15,15,0.10) 0%, rgba(15,15,15,0.35) 100%);
+    pointer-events: none;
+  }
+  .hero-visual .img-label {
+    position: absolute;
+    bottom: 16px; left: 16px;
+    z-index: 2;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(8px);
+    color: rgba(255,255,255,0.8);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 6px;
+  }
+
+  /* Hero divider */
+  .hero-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(247,105,2,0.15), rgba(247,105,2,0.08), transparent);
+  }
+
+  @media (max-width: 860px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 0; }
+    .hero-content { padding-bottom: 40px; }
+    .hero-visual { order: -1; }
+    .hero-visual img { min-height: 260px; height: 260px; border-radius: 0; }
+  }
+
+  /* ═══ SECTIONS SHARED ═══ */
+  .sec-label {
+    font-size: 11px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    color: var(--orange); margin-bottom: 10px;
+  }
+  .sec-title {
+    font-family: var(--display);
+    font-size: clamp(24px, 3.5vw, 36px);
+    line-height: 1.22; color: var(--black);
+    margin-bottom: 16px;
+  }
+  .sec-body {
+    font-size: 16px; color: var(--grey-text);
+    line-height: 1.8; max-width: 560px;
+  }
+
+  /* ═══ PROGRAM OVERVIEW ═══ */
+  .overview-section {
+    background: var(--light-bg);
+    padding: 72px 0;
+  }
+  .overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .overview-img img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+  }
+  .feature-pills {
+    display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px;
+  }
+  .fp {
+    background: var(--white);
+    border: 1px solid var(--grey-border);
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--dark);
+    box-shadow: var(--shadow-sm);
+  }
+  @media (max-width: 760px) {
+    .overview-grid { grid-template-columns: 1fr; gap: 28px; }
+    .overview-img { order: -1; }
+    .overview-img img { height: 220px; }
+  }
+
+  /* ═══ STATS CARDS ═══ */
+  .stats-section {
+    padding: 72px 0;
+    background: var(--white);
+  }
+  .stats-header { text-align: center; margin-bottom: 40px; }
+  .stats-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .stat-card {
+    background: var(--white);
+    border: 1px solid var(--grey-border);
+    border-radius: var(--radius);
+    padding: 32px 20px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .stat-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .stat-number {
+    font-family: var(--display);
+    font-size: clamp(28px, 3.5vw, 40px);
+    color: var(--orange);
+    line-height: 1;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .stat-label {
+    font-size: 13px; font-weight: 600;
+    color: var(--grey-text);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .stat-sublabel { font-size: 11px; color: var(--grey-mid); margin-top: 4px; }
+  @media (max-width: 640px) {
+    .stats-cards { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* ═══ VALUE CARDS ═══ */
+  .value-section {
+    background: var(--light-bg);
+    padding: 72px 0;
+  }
+  .value-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 28px;
+  }
+  .value-card {
+    background: var(--white);
+    border: 1px solid var(--grey-border);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow 0.25s, transform 0.25s;
+  }
+  .value-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+  .vc-num {
+    width: 32px; height: 32px;
+    background: var(--orange); color: var(--white);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 14px;
+    margin-bottom: 14px;
+  }
+  .value-card h4 { font-size: 15px; font-weight: 700; color: var(--black); margin-bottom: 6px; }
+  .value-card p { font-size: 14px; color: var(--grey-text); line-height: 1.6; }
+  @media (max-width: 600px) {
+    .value-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ═══ MID CTA ═══ */
+  .mid-cta {
+    background: var(--black);
+    padding: 56px 0;
+    text-align: center;
+  }
+  .mid-cta .sec-label { color: rgba(255,255,255,0.3); }
+  .mid-cta .sec-title { color: var(--white); margin-bottom: 8px; }
+  .mid-cta p { color: rgba(255,255,255,0.45); font-size: 15px; margin-bottom: 28px; }
+
+  /* ═══ ACCORDIONS ═══ */
+  .details-section {
+    background: var(--white);
+    padding: 72px 0;
+  }
+  .acc-wrap { margin-top: 28px; }
+  .acc {
+    border: 1px solid var(--grey-border);
+    border-radius: var(--radius);
+    margin-bottom: 8px;
+    overflow: hidden;
+    background: var(--white);
+    transition: box-shadow 0.3s;
+  }
+  .acc:hover { box-shadow: var(--shadow-sm); }
+  .acc-trigger {
+    width: 100%;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 28px;
+    background: none; border: none; cursor: pointer;
+    font-family: var(--body); font-size: 16px; font-weight: 600;
+    color: var(--black); text-align: left; gap: 16px;
+    transition: background 0.2s;
+  }
+  .acc-trigger:hover { background: rgba(0,0,0,0.012); }
+  .acc-icon {
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background: rgba(247,105,2,0.07);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.3s;
+  }
+  .acc-icon svg { width: 14px; height: 14px; color: var(--orange); transition: transform 0.3s; }
+  .acc.open .acc-icon { background: var(--orange); }
+  .acc.open .acc-icon svg { color: var(--white); transform: rotate(180deg); }
+  .acc-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s var(--ease);
+  }
+  .acc-inner {
+    padding: 0 28px 28px;
+    font-size: 15px; color: var(--grey-text); line-height: 1.8;
+  }
+  .acc-inner strong { color: var(--dark); font-weight: 600; }
+
+  .process-steps { display: flex; flex-direction: column; gap: 16px; }
+  .ps-row { display: flex; gap: 16px; align-items: flex-start; }
+  .ps-badge {
+    min-width: 64px;
+    font-weight: 700; font-size: 11px;
+    color: var(--orange);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding-top: 3px;
+  }
+  .ps-text { font-size: 15px; color: var(--dark); line-height: 1.55; }
+
+  .impact-grid { display: grid; gap: 10px; margin-top: 4px; }
+  .impact-item {
+    background: var(--light-bg); padding: 18px 22px; border-radius: 8px;
+  }
+  .impact-item strong {
+    display: block; font-size: 12px; color: var(--orange);
+    text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px;
+  }
+  .impact-item span { font-size: 14px; color: var(--dark); line-height: 1.55; }
+
+  /* ═══ EXPERIENCE SECTION ═══ */
+  .experience-section {
+    background: var(--light-bg);
+    padding: 72px 0;
+  }
+  .exp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .exp-img img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+  }
+  .exp-features {
+    display: flex; flex-direction: column; gap: 14px; margin-top: 20px;
+  }
+  .exp-feat {
+    display: flex; gap: 14px; align-items: flex-start;
+    background: var(--white);
+    padding: 18px 22px;
+    border-radius: 8px;
+    border: 1px solid var(--grey-border);
+    box-shadow: var(--shadow-sm);
+  }
+  .ef-icon {
+    width: 36px; height: 36px;
+    background: rgba(247,105,2,0.08);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; color: var(--orange);
+  }
+  .ef-text h4 { font-size: 14px; font-weight: 700; color: var(--black); margin-bottom: 2px; }
+  .ef-text p { font-size: 13px; color: var(--grey-text); line-height: 1.5; }
+  @media (max-width: 760px) {
+    .exp-grid { grid-template-columns: 1fr; gap: 28px; }
+    .exp-img { order: -1; }
+    .exp-img img { height: 220px; }
+  }
+
+  /* ═══ FORM SECTION ═══ */
+  .form-section {
+    background: var(--white);
+    padding: 72px 0;
+  }
+  .form-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 48px;
+    align-items: start;
+  }
+  @media (max-width: 780px) {
+    .form-layout { grid-template-columns: 1fr; gap: 36px; }
+  }
+
+  .form-info .sec-title { margin-bottom: 14px; }
+  .form-info > p { color: var(--grey-text); font-size: 15.5px; line-height: 1.75; margin-bottom: 28px; }
+
+  .trust-list { display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px; }
+  .trust-item {
+    display: flex; align-items: center; gap: 14px;
+    font-size: 14px; font-weight: 600; color: var(--dark);
+  }
+  .trust-check {
+    width: 24px; height: 24px;
+    background: var(--orange); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .trust-check svg { width: 13px; height: 13px; color: var(--white); }
+
+  /* Edufund branding block */
+  .edufund-block {
+    padding-top: 24px;
+    border-top: 1px solid var(--grey-border);
+  }
+  .edufund-block img {
+    height: 28px;
+    width: auto;
+    margin-bottom: 6px;
+    opacity: 0.7;
+  }
+  .edufund-block p {
+    font-size: 12px;
+    color: #aaa;
+    letter-spacing: 0.03em;
+  }
+
+  /* Google Form embed card */
+  .form-embed-card {
+    background: var(--white);
+    border-radius: 14px;
+    border: 1px solid var(--grey-border);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+  }
+  .form-embed-header {
+    padding: 24px 28px 0;
+  }
+  .form-embed-header h3 {
+    font-family: var(--display);
+    font-size: 22px;
+    color: var(--black);
+    margin-bottom: 4px;
+  }
+  .form-embed-header p {
+    font-size: 13.5px;
+    color: var(--grey-mid);
+    margin-bottom: 0;
+  }
+  .form-embed-card iframe {
+    width: 100%;
+    height: 1100px;
+    border: none;
+    display: block;
+  }
+  @media (max-width: 600px) {
+    .form-embed-card iframe { height: 1200px; }
+  }
+
+  /* ═══ FINAL CTA ═══ */
+  .final-cta {
+    background: var(--dark);
+    padding: 64px 0;
+    text-align: center;
+  }
+  .final-cta .sec-label { color: rgba(255,255,255,0.3); }
+  .final-cta h2 {
+    font-family: var(--display);
+    font-size: clamp(24px, 3.5vw, 36px);
+    color: var(--white);
+    margin-bottom: 8px;
+  }
+  .final-cta p {
+    color: rgba(255,255,255,0.45);
+    font-size: 15px;
+    margin-bottom: 32px;
+    max-width: 500px;
+    margin-left: auto; margin-right: auto;
+  }
+
+  /* ═══ FOOTER ═══ */
+  footer {
+    background: var(--black);
+    color: rgba(255,255,255,0.35);
+    padding: 32px 0;
+    text-align: center;
+    font-size: 13px;
+    line-height: 2;
+  }
+  footer strong { color: var(--white); }
+  footer a { color: var(--orange); text-decoration: none; }
+
+  /* ═══ ANIMATIONS ═══ */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.65s var(--ease), transform 0.65s var(--ease);
+  }
+  .reveal.vis { opacity: 1; transform: translateY(0); }
+
+  /* stagger children */
+  .reveal-stagger > * {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
+  }
+  .reveal-stagger.vis > *:nth-child(1) { transition-delay: 0s; }
+  .reveal-stagger.vis > *:nth-child(2) { transition-delay: 0.07s; }
+  .reveal-stagger.vis > *:nth-child(3) { transition-delay: 0.14s; }
+  .reveal-stagger.vis > *:nth-child(4) { transition-delay: 0.21s; }
+  .reveal-stagger.vis > * { opacity: 1; transform: translateY(0); }
+
+  /* ═══ MOBILE ═══ */
+  @media (max-width: 600px) {
+    .hero { padding: 0; }
+    .hero-content { padding: 32px 0 36px; }
+    .header-btn { display: none; }
+    .hl-card { padding: 10px 16px; font-size: 12px; }
+    section, .overview-section, .stats-section, .value-section,
+    .details-section, .experience-section, .form-section { padding: 48px 0; }
+    .form-embed-header { padding: 20px 20px 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announce-bar">
+  An Official Initiative by <strong>Rochester Institute of Technology, New York</strong>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo-group">
+      <div class="rit-badge">RIT</div>
+      <div class="logo-text-group">
+        <div class="logo-name">Global Scholar Quest</div>
+        <div class="logo-sub">India Chapter</div>
+      </div>
+    </div>
+    <a href="#apply" class="header-btn" onclick="trackCTA('header')">Apply as Partner School</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container" style="padding:0;">
+    <div class="hero-grid">
+      <div class="hero-content" style="padding-left:28px; padding-right:16px;">
+        <div class="hero-pill">Invite-Only &middot; India 2026</div>
+
+        <h1><span class="c-orange">RIT</span> Global Scholar Quest</h1>
+        <div class="hero-tagline">A First-of-its-Kind Innovation Talent Hunt for India's Top Student Minds</div>
+
+        <p class="hero-desc">
+          An invite-only national initiative by Rochester Institute of Technology (RIT), USA — designed to identify and elevate high-potential student innovators through a structured, multi-stage academic journey.
+        </p>
+
+        <div class="hero-highlights">
+          <div class="hl-card"><small>Scholarship</small>Up to USD $50,000</div>
+          <div class="hl-card"><small>Opportunity</small>Global Exposure</div>
+          <div class="hl-card"><small>Impact</small>National Recognition</div>
+        </div>
+
+        <a href="#apply" class="btn-cta" onclick="trackCTA('hero')">
+          Apply for Institutional Partnership
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <p class="hero-microcopy">
+          Limited to <strong>40 select schools</strong> across India &bull; By invitation only &bull; No participation fee
+        </p>
+        <p class="hero-edufund">Execution supported by Edufund</p>
+
+        <div class="hero-sponsor">
+          Fully sponsored by <strong>Rochester Institute of Technology (RIT), USA</strong>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="hero_campus.jpg" alt="RIT Campus, Rochester, New York" loading="eager">
+        <span class="img-label">RIT Campus, New York</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-divider"></div>
+</section>
+
+<!-- PROGRAM OVERVIEW -->
+<section class="overview-section">
+  <div class="container">
+    <div class="overview-grid">
+      <div class="reveal">
+        <div class="sec-label">Program Overview</div>
+        <h2 class="sec-title">A Structured Platform for Academic Excellence</h2>
+        <p class="sec-body">
+          RIT Global Scholar Quest (GSQ) is a first-of-its-kind initiative designed to systematically identify, evaluate, and mentor high-potential students across leading international schools in India. It bridges school-level academic excellence with global undergraduate innovation pathways.
+        </p>
+        <div class="feature-pills">
+          <span class="fp">Invite-Only Participation</span>
+          <span class="fp">4-Month Journey</span>
+          <span class="fp">Multi-Stage Filtering</span>
+          <span class="fp">Annual Platform</span>
+        </div>
+      </div>
+      <div class="overview-img reveal">
+        <img src="presentation_stage.jpg" alt="RIT Presentation Event" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTICIPATION SNAPSHOT -->
+<section class="stats-section">
+  <div class="container-sm">
+    <div class="stats-header reveal">
+      <div class="sec-label">Participation Snapshot</div>
+      <h2 class="sec-title" style="text-align:center;">A Highly Selective National Academic Cohort</h2>
+    </div>
+    <div class="stats-cards reveal-stagger reveal">
+      <div class="stat-card">
+        <div class="stat-number">40</div>
+        <div class="stat-label">Premium Schools</div>
+        <div class="stat-sublabel">Invite-only</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">20–40</div>
+        <div class="stat-label">Students</div>
+        <div class="stat-sublabel">Per school</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">Top 10</div>
+        <div class="stat-label">Shortlisted</div>
+        <div class="stat-sublabel">Per school</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">400</div>
+        <div class="stat-label">Finalists</div>
+        <div class="stat-sublabel">National pool</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUE FOR SCHOOLS -->
+<section class="value-section">
+  <div class="container-sm">
+    <div class="reveal">
+      <div class="sec-label">For Partner Schools</div>
+      <h2 class="sec-title">Why Leading Institutions Are Partnering with GSQ</h2>
+      <p class="sec-body" style="margin-bottom:0;">GSQ is a strategic academic engagement platform — not a competition.</p>
+    </div>
+    <div class="value-grid reveal-stagger reveal">
+      <div class="value-card">
+        <div class="vc-num">1</div>
+        <h4>High-Intent Student Access</h4>
+        <p>Connect with innovation-driven students screened through a rigorous national framework</p>
+      </div>
+      <div class="value-card">
+        <div class="vc-num">2</div>
+        <h4>Global Pathway Alignment</h4>
+        <p>Direct alignment with undergraduate pathways and scholarship opportunities at RIT, New York</p>
+      </div>
+      <div class="value-card">
+        <div class="vc-num">3</div>
+        <h4>RIT Institutional Association</h4>
+        <p>Co-branding and partnership with Rochester Institute of Technology — a leading US university</p>
+      </div>
+      <div class="value-card">
+        <div class="vc-num">4</div>
+        <h4>Academic Brand Differentiation</h4>
+        <p>Enhanced positioning among premium international schools through a credible global platform</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MID CTA -->
+<section class="mid-cta">
+  <div class="container reveal">
+    <div class="sec-label">Limited Availability</div>
+    <h2 class="sec-title" style="color:var(--white);">Institutional Partnerships Now Open</h2>
+    <p>Only 40 schools will be selected nationwide. Secure your position early.</p>
+    <a href="#apply" class="btn-cta" onclick="trackCTA('mid-cta')">
+      Apply for Institutional Partnership
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- ACCORDIONS -->
+<section class="details-section">
+  <div class="container-sm">
+    <div class="reveal">
+      <div class="sec-label">Program Details</div>
+      <h2 class="sec-title">Everything You Need to Know</h2>
+    </div>
+    <div class="acc-wrap reveal">
+
+      <div class="acc">
+        <button class="acc-trigger" onclick="toggleAcc(this)">
+          Selection Process
+          <span class="acc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="acc-panel"><div class="acc-inner">
+          <div class="process-steps">
+            <div class="ps-row"><span class="ps-badge">Stage 1</span><span class="ps-text"><strong>School Screening</strong> — 20–40 students evaluated and nominated by partner school faculty</span></div>
+            <div class="ps-row"><span class="ps-badge">Stage 2</span><span class="ps-text"><strong>National Evaluation</strong> — Concept note submission + video pitch reviewed by RIT-aligned evaluators</span></div>
+            <div class="ps-row"><span class="ps-badge">Stage 3</span><span class="ps-text"><strong>Mentorship Program</strong> — Curated workshops, expert guidance, and project refinement</span></div>
+            <div class="ps-row"><span class="ps-badge">Stage 4</span><span class="ps-text"><strong>Grand Finale</strong> — Live jury presentation at the national summit in Mumbai</span></div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="acc">
+        <button class="acc-trigger" onclick="toggleAcc(this)">
+          Program Timeline
+          <span class="acc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="acc-panel"><div class="acc-inner">
+          <div class="process-steps">
+            <div class="ps-row"><span class="ps-badge">May</span><span class="ps-text">School Screening &amp; Student Nominations</span></div>
+            <div class="ps-row"><span class="ps-badge">June</span><span class="ps-text">National Evaluation — Concept Notes &amp; Video Pitches</span></div>
+            <div class="ps-row"><span class="ps-badge">July</span><span class="ps-text">Mentorship Workshops &amp; Project Refinement</span></div>
+            <div class="ps-row"><span class="ps-badge">August</span><span class="ps-text">Grand Finale — National Summit in Mumbai</span></div>
+          </div>
+        </div></div>
+      </div>
+
+      <div class="acc">
+        <button class="acc-trigger" onclick="toggleAcc(this)">
+          Awards &amp; Recognition
+          <span class="acc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="acc-panel"><div class="acc-inner">
+          <strong>Scholarship:</strong> Up to USD $50,000 in RIT scholarships for top performers<br><br>
+          <strong>Internship:</strong> 2-week internship opportunity at RIT, New York<br><br>
+          <strong>Recognition:</strong> National-level academic recognition and media coverage<br><br>
+          <strong>Awards:</strong> Premium devices (laptops / tablets) for select winners
+        </div></div>
+      </div>
+
+      <div class="acc">
+        <button class="acc-trigger" onclick="toggleAcc(this)">
+          Stakeholder Impact
+          <span class="acc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg></span>
+        </button>
+        <div class="acc-panel"><div class="acc-inner">
+          <div class="impact-grid">
+            <div class="impact-item"><strong>For Schools</strong><span>Global academic positioning, RIT co-branding, and access to a curated innovation pipeline</span></div>
+            <div class="impact-item"><strong>For Students</strong><span>National recognition, global scholarship pathways, and hands-on mentorship from industry experts</span></div>
+            <div class="impact-item"><strong>For Parents</strong><span>A credible, transparent, merit-based opportunity backed by a world-class US university</span></div>
+          </div>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE / GRAND FINALE -->
+<section class="experience-section">
+  <div class="container">
+    <div class="exp-grid">
+      <div class="exp-img reveal">
+        <img src="auditorium_event.jpg" alt="RIT Grand Finale Event" loading="lazy">
+      </div>
+      <div class="reveal">
+        <div class="sec-label">Grand Finale</div>
+        <h2 class="sec-title">A National Stage for India's Brightest Minds</h2>
+        <p class="sec-body" style="margin-bottom:0;">The Grand Finale is a multi-day summit in Mumbai bringing together finalists, educators, and industry leaders.</p>
+        <div class="exp-features">
+          <div class="exp-feat">
+            <div class="ef-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+            <div class="ef-text"><h4>Leadership Summit</h4><p>Keynote speakers and thought leaders in education and innovation</p></div>
+          </div>
+          <div class="exp-feat">
+            <div class="ef-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
+            <div class="ef-text"><h4>Jury Presentations</h4><p>Student projects evaluated by academic and industry experts</p></div>
+          </div>
+          <div class="exp-feat">
+            <div class="ef-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+            <div class="ef-text"><h4>National Visibility</h4><p>Awards ceremony with media coverage and institutional recognition</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM SECTION — Google Form Embed -->
+<section class="form-section" id="apply">
+  <div class="container">
+    <div class="form-layout">
+      <div class="form-info reveal">
+        <div class="sec-label">Partner Application</div>
+        <h2 class="sec-title">Secure Your Institution's Participation in GSQ</h2>
+        <p>Join a select network of leading schools shaping the next generation of global innovators. Submit your details and our partnerships team will reach out within 48 hours.</p>
+        <div class="trust-list">
+          <div class="trust-item">
+            <span class="trust-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Official RIT partnership certification
+          </div>
+          <div class="trust-item">
+            <span class="trust-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Dedicated institutional coordinator assigned
+          </div>
+          <div class="trust-item">
+            <span class="trust-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            Priority access to all GSQ resources and events
+          </div>
+        </div>
+        <div class="edufund-block">
+          <img src="edufund_logo.png" alt="Edufund">
+          <p>Execution supported by Edufund</p>
+        </div>
+      </div>
+
+      <div class="form-embed-card reveal">
+        <div class="form-embed-header">
+          <h3>Apply for Partnership</h3>
+          <p>Complete the form below to register your institution</p>
+        </div>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeDowA2RxUhHJhM9_xgcxDrElAvtXzWIktTEXtm6M3wqwKRDw/viewform?embedded=true"
+          width="100%"
+          height="1100"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          loading="lazy"
+          title="GSQ Partner Application Form"
+        >Loading...</iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container reveal">
+    <div class="sec-label">Join GSQ India</div>
+    <h2>Secure Your Institution's Participation in GSQ — India Chapter</h2>
+    <p>Join a select network of leading schools shaping the next generation of global innovators.</p>
+    <a href="#apply" class="btn-cta" onclick="trackCTA('final-cta')">
+      Apply for Institutional Partnership
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <strong>RIT Global Scholar Quest — India Chapter</strong><br>
+    An initiative by Rochester Institute of Technology, New York<br>
+    <span style="margin-top:4px; display:inline-block;">For inquiries: <a href="/cdn-cgi/l/email-protection#d9beaaa899abb0adf7bcbdac"><span class="__cf_email__" data-cfemail="3a5d494b7a48534e145f5e4f">[email&#160;protected]</span></a></span>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // Accordion
+  function toggleAcc(btn) {
+    const acc = btn.parentElement;
+    const panel = acc.querySelector('.acc-panel');
+    const isOpen = acc.classList.contains('open');
+    document.querySelectorAll('.acc').forEach(a => {
+      a.classList.remove('open');
+      a.querySelector('.acc-panel').style.maxHeight = null;
+    });
+    if (!isOpen) {
+      acc.classList.add('open');
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    }
+  }
+
+  // Scroll reveal
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+  }, { threshold: 0.06, rootMargin: '0px 0px -20px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  // GA4 CTA tracking
+  function trackCTA(location) {
+    if (typeof gtag === 'function') {
+      gtag('event', 'apply_click', {
+        'event_category': 'CTA',
+        'event_label': 'Apply for Institutional Partnership',
+        'cta_location': location
+      });
+    }
+  }
+</script>
+
+</body>
+</html>
